@@ -22,7 +22,7 @@ let baw = {
 
 let images = []
 
-for (let i = 1 ; i < 16; i++  ){
+for (let i = 1 ; i <= 12; i++  ){
     images.push(`<img src="./images/${baw.name}${i}.jpg" id='${i}' width="300rem" class="imagesgallery">`)
 }
 
