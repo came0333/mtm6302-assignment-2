@@ -23,7 +23,7 @@ let baw = {
 let images = []
 
 for (let i = 1 ; i < 16; i++  ){
-    images.push(`<img src="./images/${baw.name}${i}.jpg" id='${i}' width="320rem" class="imagesgallery">`)
+    images.push(`<img src="./images/${baw.name}${i}.jpg" id='${i}' width="300rem" class="imagesgallery">`)
 }
 
 $container.innerHTML = images.join('')
@@ -34,11 +34,11 @@ $container.addEventListener('click', function(event) {
     image.classList.toggle('imagesgallerybig');
   })
 
-
+//displays the image description while you hover over an image on the top of the browser
 $container.addEventListener('mouseover', function(event) {
     $descriptions.textContent = imagedescriptions[event.target.id-1];
 })
-
+//makes the description disapear when the mouse isn't on the image
 $container.addEventListener('mouseout', function(event) {
   $descriptions.textContent = '';
 })
