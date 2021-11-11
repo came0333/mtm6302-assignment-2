@@ -71,13 +71,6 @@ html, body {
 #container{
 	background-color: #F5F5F5;
 }
-img{
-	height: 200px;
-	width: 200px;
-	object-fit: cover;
-	margin-top: 20px;
-	margin-left: 25px;
-}
 .button{
 	background-color: rgb(77, 85, 77);
 	color: white;;
@@ -91,16 +84,7 @@ img{
 	background-color: darkolivegreen;
 	color: black;
 }
-#footer{
-	text-align: center;
-}
-/* mobile */
- #container{
-	display: grid;
-	grid-template-columns: repeat(1fr,1fr, 1fr,);
-	grid-template-rows: repeat(1fr,1fr,1fr,1fr);
-  }
-  #footer {
+#footer {
 	font-size: 20px;
 	   padding: 25px;
 	   width: 100%;
@@ -108,23 +92,46 @@ img{
 	   background-color: darkolivegreen;
 	   text-align: center;  
 	}
-  
-  
-/* tablet */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
- #container{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-} 
-}   
 
-/* desktop */
-@media only screen and (min-width: 1025px) and (max-width: 2200px) {
-  #container{
-	display: grid;
-	grid-template-columns: repeat(6, 1fr);
-	grid-template-rows: repeat(2, 1fr);
-	grid-gap: 10px;
-  } 
-} 
+#border{
+	border-left: 35px solid rgb(187, 187, 187);
+	border-right:35px solid rgb(187, 187, 187);
+ }
+ 
+ #header {
+	padding: 30px;
+	background: rgb(187, 187, 187);
+	color: black;
+	font-size: 25px;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+  }
+
+.imagesgallerybig {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-top: 0.15rem;
+  padding-bottom: 0.15rem;
+  width: 24rem;
+}
+
+.imagesgallery {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-top: 0.15rem;
+  padding-bottom: 0.15rem;
+}
+
+.images {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.desc {
+  font-family: monospace;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  font-weight: bold;
+  font-size: 1rem;}
