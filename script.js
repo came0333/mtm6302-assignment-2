@@ -1,5 +1,5 @@
 //Images from pexels.com
-const $descriptions = document.getElementById('descriptions')
+const $descriptions= document.getElementById('descriptions')
 const $container = document.getElementById('container')
 const imagedescriptions =[
     'Photo by Anubhaw Anand  from Pexels',
@@ -23,7 +23,25 @@ let baw = {
 let images = []
 
 for (let i = 1 ; i < 16; i++  ){
-    images.push(`<img src="./images/${baw.name}${i}.jpg" id='${i}' width="330rem" class="imagesgallery">`)
+    images.push(`<img src="./images/${baw.name}${i}.jpg" id='${i}' width="320rem" class="imagesgallery">`)
 }
 
 $container.innerHTML = images.join('')
+
+//enables the images to get bigger when clicked
+$container.addEventListener('click', function(event) {
+    let image = event.target; 
+    image.classList.toggle('imagesgallerybig');
+  })
+
+
+$container.addEventListener('mouseover', function(event) {
+    $descriptions.textContent = imagedescriptions[event.target.id-1];
+})
+
+$container.addEventListener('mouseout', function(event) {
+  $descriptions.textContent = '';
+})
+
+console.log($container)
+  

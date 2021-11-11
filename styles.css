@@ -104,22 +104,22 @@ html, body {
 	color: black;
 	font-size: 25px;
 	text-align: center;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
   }
 
 .imagesgallerybig {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-  padding-top: 0.15rem;
-  padding-bottom: 0.15rem;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   width: 24rem;
 }
 
 .imagesgallery {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-  padding-top: 0.15rem;
-  padding-bottom: 0.15rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .images {
@@ -129,9 +129,10 @@ html, body {
 }
 
 .desc {
-  font-family: monospace;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 5px;
   font-weight: bold;
-  font-size: 1rem;}
+  font-size: 25px;
+text-align: center;}
