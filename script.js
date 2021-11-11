@@ -2,12 +2,12 @@
 const $descriptions= document.getElementById('descriptions')
 const $container = document.getElementById('container')
 const imagedescriptions =[
-    'Photo by Anubhaw Anand  from Pexels',
-    'Photo by Sarath Giri from Pexels',
+    'Photo by Darina Belonogova from Pexels',
+    'Photo by Евгений Качин from Pexels',
     'Photo by Anastasia Kolchina from Pexels',
-    'Photo by Warren Bradley from Pexels',
+    'Photo by Elianne from Pexels',
     'Photo by João Cabral  from Pexels',
-    'Photo by ROMAN ODINTSOV from Pexels',
+    'Photo by Heloisa from Pexels',
     'Photo by Julissa Helmuth from Pexels',
     'Photo by Nothing A head from Pexels',
     'Photo by Hidden Couple from Pexels',
@@ -42,6 +42,13 @@ $container.addEventListener('mouseover', function(event) {
 $container.addEventListener('mouseout', function(event) {
   $descriptions.textContent = '';
 })
+
+function borderColor (p){
+    p.target.style.border="5px solid gray";
+    setTimeout(function(){
+      p.target.style.border = "";
+    }, 500);
+  }
 
 console.log($container)
   
