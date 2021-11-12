@@ -1,4 +1,6 @@
 //Images from pexels.com
+//The two events I chose were a hover that would show off the image description and the ability to click the images
+//to make them bigger
 const $descriptions= document.getElementById('descriptions')
 const $container = document.getElementById('container')
 const imagedescriptions =[
@@ -36,11 +38,11 @@ $container.addEventListener('click', function(event) {
 
 //displays the image description while you hover over an image on the top of the browser
 $container.addEventListener('mouseover', function(event) {
-    $descriptions.textContent = imagedescriptions[event.target.id-1];
+    $descriptions.textContent = imagedescriptions[event.target.id-1];//adds the descriptions to the hover
 })
 //makes the description disapear when the mouse isn't on the image
 $container.addEventListener('mouseout', function(event) {
-  $descriptions.textContent = '';
+  $descriptions.textContent = '';//removes the descriptions from the top of the browser
 })
 
   
