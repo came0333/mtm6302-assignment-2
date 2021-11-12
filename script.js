@@ -43,13 +43,4 @@ $container.addEventListener('mouseout', function(event) {
   $descriptions.textContent = '';
 })
 
-function borderColor (p){
-    p.target.style.border="5px solid gray";
-    setTimeout(function(){
-      p.target.style.border = "";
-    }, 500);
-  }
-
-console.log($container)
-
   
